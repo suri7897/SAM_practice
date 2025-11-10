@@ -16,7 +16,7 @@ Codes : https://github.com/davda54/sam.git
 ## **Experiment**
 
   In `example` folder, you can do simple implementations of Wide-ResNet and Simple CNN models that can be trained on the CIFAR-10 dataset using Sharpness-Aware Minimization (SAM).
-  For more information, refer to `Readme.md` file in `example` folder.
+  For more information, refer to `README.md` file in `example` folder.
 
 ## **Explanation**
 
