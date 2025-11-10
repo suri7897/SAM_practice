@@ -31,7 +31,8 @@ This folder contains simple implementations of **Wide-ResNet** and **Simple CNN*
 ## Results
 
 After training, log files (.csv) are saved in the `results` folder.
-You can visualize the loss and accuracy curves for each optimization method using the Jupyter notebook: `results/plotter.ipynb`.
+You can visualize and save the loss and accuracy curves for each optimization method using the Jupyter notebook: `results/plotter.ipynb`.
+Figures are saved in `figures` folder.
 
 <img width="590" height="390" alt="valid_loss" src="https://github.com/user-attachments/assets/127e593b-9ff2-493c-a6d3-6150d669cd4d" />
 <img width="590" height="390" alt="valid_acc" src="https://github.com/user-attachments/assets/504808b5-07d2-4019-935c-9b94316bb2e8" />
