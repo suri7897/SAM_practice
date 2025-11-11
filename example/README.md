@@ -7,6 +7,9 @@ This folder contains simple implementations of **Wide-ResNet** and **Simple CNN*
 ### Simple CNN
 
 **Model Description:**
+
+<img width="779" height="528" alt="cnn_model_structure" src="https://github.com/user-attachments/assets/1e569326-9441-4f56-b088-21e63a788e6d" />
+
 - **Input:** 32×32×3 RGB image  
 - **Convolutional Layers:**
   - Two 3×3 Conv blocks (32, 64 filters)  
@@ -17,7 +20,6 @@ This folder contains simple implementations of **Wide-ResNet** and **Simple CNN*
 - **Activation:** ReLU  
 - **Regularization:** Dropout
 - **Default learning rate** : 1e-2
-
 
 ## Usage
 
