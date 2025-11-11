@@ -1,4 +1,4 @@
-# Sharpness Awareness Minimization(SAM)
+# Sharpness Awareness Minimization(SAM) / Practice
 
 > [!IMPORTANT]
 I acknowledge that all ideas and codes presented here are derived from the study titled '**[Sharpness-Aware Minimization for Efficiently Improving Generalization](https://arxiv.org/abs/2010.01412)**' (2020). 
