@@ -26,7 +26,7 @@ if __name__ == "__main__":
     parser.add_argument("--rho", default=2.0, type=int, help="Rho parameter for SAM.")
     parser.add_argument("--weight_decay", default=0.0005, type=float, help="L2 weight decay.")
     parser.add_argument("--width_factor", default=8, type=int, help="How many times wider compared to normal ResNet.")
-    parser.add_argument("--model", default="cnn", type = str, choices=["cnn", "wrn"], help = "Type of model that learns.")
+    parser.add_argument("--model", default="wrn", type = str, choices=["cnn", "wrn"], help = "Type of model that learns.")
 
     args = parser.parse_args()
 
