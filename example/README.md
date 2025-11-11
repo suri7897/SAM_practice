@@ -5,7 +5,6 @@ This folder contains simple implementations of **Wide-ResNet** and **Simple CNN*
 ## Model Structure
 
 ### Simple CNN
-<img width="500" height="400" alt="simple_cnn" src="https://github.com/user-attachments/assets/682b0900-3744-4e99-ae72-7e51efcdcf38" />
 
 **Model Description:**
 - **Input:** 32×32×3 RGB image  
@@ -34,6 +33,18 @@ After training, log files (.csv) are saved in the `results` folder.
 You can visualize and save the loss and accuracy curves for each optimization method using the Jupyter notebook: `results/plotter.ipynb`.
 Figures are saved in `figures` folder.
 
-<img width="590" height="390" alt="valid_loss" src="https://github.com/user-attachments/assets/127e593b-9ff2-493c-a6d3-6150d669cd4d" />
-<img width="590" height="390" alt="valid_acc" src="https://github.com/user-attachments/assets/504808b5-07d2-4019-935c-9b94316bb2e8" />
+
+<img width="590" height="390" alt="valid_loss_cnn" src="https://github.com/user-attachments/assets/127e593b-9ff2-493c-a6d3-6150d669cd4d" />
+<img width="590" height="390" alt="valid_acc_cnn" src="https://github.com/user-attachments/assets/504808b5-07d2-4019-935c-9b94316bb2e8" />
+
+**[Figure 1,2 | figure of Validation Loss, Accuracy of CNN model]** 
+
+<br>
+
+<img width="590" height="390" alt="valid_loss_wrn" src="https://github.com/user-attachments/assets/d91e6290-f275-43bc-a068-e1bed32e015a" />
+<img width="590" height="390" alt="valid_acc_wrn" src="https://github.com/user-attachments/assets/a054c74f-8a1c-4335-9e08-c7ff17189c71" />
+
+**[Figure 3,4 | figure of Validation Loss, Accuracy of WRN model]** 
+
+
 
