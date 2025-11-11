@@ -13,6 +13,34 @@ Paper : https://arxiv.org/abs/2010.01412
 
 Codes : https://github.com/davda54/sam.git
 
+## Usage
+
+It additionally includes MultiSAM, which pertubates multiple times. 
+
+```python
+from sam_multi_step import MultiSAM
+...
+
+model = YourModel()
+base_optimizer = torch.optim.SGD  # define an optimizer for the "sharpness-aware" update
+optimizer = MultiSAM(model.parameters(), base_optimizer, lr=0.1, momentum=0.9, n_step=2)
+...
+
+for input, output in data:
+
+# Same as Original SAM
+
+  # first forward-backward pass
+  loss = loss_function(output, model(input))  # use this loss for any training statistics
+  loss.backward()
+  optimizer.first_step(zero_grad=True)
+  
+  # second forward-backward pass
+  loss_function(output, model(input)).backward()  # make sure to do a full forward pass
+  optimizer.second_step(zero_grad=True)
+...
+```
+
 ## **Experiment**
 
   In `example` folder, you can do simple implementations of Wide-ResNet and Simple CNN models that can be trained on the CIFAR-10 dataset using Sharpness-Aware Minimization (SAM).
